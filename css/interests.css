@@ -1,0 +1,65 @@
+#interests {
+    background: var(--primary-color);
+    padding: 40px;
+    border-radius: 16px;
+    margin: 40px 20px;
+    box-shadow: 0 8px 20px var(--shadow-color);
+    scroll-margin-top:50px ;
+    direction: rtl;
+}
+
+/* Section title */
+#interests h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, var(--text-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+
+/* Intro paragraph */
+#interests p {
+    text-align: justify;
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Definition list styling */
+#interests dl {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Each topic title */
+#interests dt {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--text-color) ;
+    border-right: 4px solid var(--text-color);
+    padding-right: 10px;
+    margin-bottom: 6px;
+}
+
+/* Each topic description */
+#interests dd {
+    margin: 0;
+    color: var(--text-color);
+    background: var(--secondary-color);
+    border-radius: 8px;
+    padding: 10px 14px;
+    line-height: 1.6;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+#interests dd:hover,
+#interests h2:hover {
+    transform: translateY(-3px);
+}
+

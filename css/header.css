@@ -1,0 +1,54 @@
+header {
+    position: fixed;
+    background-color: var(--primary-color);
+    -webkit-backdrop-filter: blur(10px) brightness(0.8);
+    backdrop-filter: blur(10px) brightness(0.8) ;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    z-index: 10;
+
+    box-shadow: 0 5px 10px rgba(3, 3, 3, 0.08);
+}
+
+.main-nav {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 10px 20px;
+}
+
+.main-nav ul{
+    direction: rtl;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.main-nav ul a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.main-nav ul a:hover {
+
+    /* Changes the link color to a nice bright blue when the mouse is over it. */
+    color: var(--link-color);
+}
+
+.main-nav h5{
+    transition: transform 0.3s ease;
+}
+
+.main-nav h5:hover {
+    transform: scale(1.05);
+}

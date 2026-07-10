@@ -1,0 +1,23 @@
+@font-face {
+    font-family: vazir;
+    src: url(./../fonts/Vazir.woff2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "vazir", sans-serif, "times new roman";
+    color: var(--text-color);
+    line-height: 1.5;
+    background-color: var(--background-color);
+    max-width: 1000px;
+    margin: auto;
+}

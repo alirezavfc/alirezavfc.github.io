@@ -1,0 +1,44 @@
+.welcome {
+    direction: rtl;
+
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 50px;
+    scroll-margin-top: 50px;
+
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.welcome h1 {
+    background: linear-gradient(90deg, var(--text-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.welcome p {
+    transition: transform 0.3s ease;
+}
+
+
+.welcome h1:hover,
+.welcome p:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 30px; 
+  }
+}

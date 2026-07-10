@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #f6eee1;
+    --secondary-color: #f7e9c3;
+    --background-color: #fdfaf7;
+    --text-color: #5C4033;
+    --accent-color: #cbad85;
+    --link-color: #c68161;
+    --shadow-color: rgba(0, 0, 0, 0.12);
+ 
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1F1E1C;   /* بک تیره گرم */
+    --primary-color: #2A2926;      /* کارت‌ها */
+    --secondary-color: #33312D;    /* کارت ثانویه */
+    --text-color: #E6E1D8;         /* متن کرمی */
+    --accent-color: #CFC4B3;       /* تأکید ملایم */
+    --link-color: #BFAE9F;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+
+  }
+}
