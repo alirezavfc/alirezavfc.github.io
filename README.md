@@ -15,4 +15,4 @@ Personal portfolio website showcasing my skills, projects, and interests as a fr
 
 ## Live Demo
 
-https://alirezavfc.github.io/portfolio/
+https://alirezavfc.github.io/
