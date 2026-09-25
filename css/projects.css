@@ -50,11 +50,10 @@
     padding: 20px;
     border: 1px solid var(--shadow-color);
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-.completed-projects .project + .project {
-    margin-top: 20px;
-}
+
 
 .project h4 {
     margin-top: 0;
