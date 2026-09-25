@@ -1,5 +1,6 @@
 #skills {
     scroll-margin-top: 50px;
+    direction: rtl;
     padding: 0 16px;
 }
 
@@ -37,6 +38,7 @@
 
 .skill-cards ul{ 
     list-style: none;
+    direction: ltr;
 }
 
 .skill-cards li:not(:last-child) {
