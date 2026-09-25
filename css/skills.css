@@ -1,7 +1,8 @@
 #skills {
     scroll-margin-top: 50px;
-    padding: 0 50px;
+    padding: 0 16px;
 }
+
 .skill-cards{ 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -15,7 +16,6 @@
     box-shadow: 0 4px 10px var(--shadow-color);
     padding: 20px;
     transition: transform ease 0.5s;
-
 }
 
 .current-skills:hover ,
@@ -29,6 +29,7 @@
 .development-skills h3{
     direction: rtl;
 }
+
 #skills h2 {
     text-align: center;
     padding: 10px;
@@ -36,4 +37,8 @@
 
 .skill-cards ul{ 
     list-style: none;
+}
+
+.skill-cards li:not(:last-child) {
+    margin-bottom: 10px;
 }

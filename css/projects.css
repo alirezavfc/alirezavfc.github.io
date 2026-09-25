@@ -1,38 +1,99 @@
 #projects {
     scroll-margin-top: 50px;
     padding: 0 50px;
+    direction: rtl;
 }
-.project-cards{ 
+
+#projects h2 {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.project-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px;
 }
 
-.current-projects ,
-.development-projects {
-    background-color:var(--primary-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px var(--shadow-color);
-    padding: 20px;
-    transition: transform ease 0.5s;
+.completed-projects {
+    grid-column: 1 / -1;
 }
 
-.current-projects:hover ,
-.development-projects:hover {
+.completed-projects,
+.current-projects,
+.future-projects {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    padding: 25px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.completed-projects:hover,
+.current-projects:hover,
+.future-projects:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px var(--shadow-color);
 }
 
-#projects h2,
+.completed-projects h3,
 .current-projects h3,
-.development-projects h3{
-    direction: rtl;
-}
-#projects h2 {
-    text-align: center;
-    padding: 10px;
+.future-projects h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
-.project-cards ul{ 
-    list-style: none;
+.project {
+    padding: 20px;
+    border: 1px solid var(--shadow-color);
+    border-radius: 8px;
+}
+
+.completed-projects .project + .project {
+    margin-top: 20px;
+}
+
+.project h4 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.project p {
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.project-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #projects {
+        padding: 0 16px;
+    }
+
+    .project-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .completed-projects {
+        grid-column: auto;
+    }
 }
