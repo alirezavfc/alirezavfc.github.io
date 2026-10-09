@@ -18,6 +18,10 @@ body {
     color: var(--text-color);
     line-height: 1.5;
     background-color: var(--background-color);
-    max-width: 1000px;
     margin: auto;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
 }
