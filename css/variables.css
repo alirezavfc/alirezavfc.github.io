@@ -1,23 +1,22 @@
+
 :root {
-    --primary-color: #f6eee1;
-    --secondary-color: #f7e9c3;
-    --background-color: #fdfaf7;
-    --text-color: #5C4033;
-    --accent-color: #cbad85;
-    --link-color: #c68161;
-    --shadow-color: rgba(0, 0, 0, 0.12);
- 
+  --primary-color: #FFFFFF;
+  --secondary-color: #E9EEE8;
+  --background-color: #F8F9F7;
+  --text-color: #283D32;
+  --accent-color: #52765E;
+  --link-color: #37664B;
+  --shadow-color: rgba(32, 49, 38, 0.10);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #1F1E1C;   /* بک تیره گرم */
-    --primary-color: #2A2926;      /* کارت‌ها */
-    --secondary-color: #33312D;    /* کارت ثانویه */
-    --text-color: #E6E1D8;         /* متن کرمی */
-    --accent-color: #CFC4B3;       /* تأکید ملایم */
-    --link-color: #BFAE9F;
-    --shadow-color: rgba(0, 0, 0, 0.5);
-
+    --primary-color: #252D28;
+    --secondary-color: #303B33;
+    --background-color: #1B211D;
+    --text-color: #E5EBE5;
+    --accent-color: #9AB9A0;
+    --link-color: #B1D2B6;
+    --shadow-color: rgba(0, 0, 0, 0.30);
   }
 }
