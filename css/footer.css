@@ -6,7 +6,6 @@
     margin-top: 60px;
     padding: 64px 24px 24px;
     border-top: 4px solid #52765E;
-    width: 100%;
     box-sizing: border-box;
 }
 
@@ -15,7 +14,6 @@
     margin: 0 auto;
     text-align: center;
     direction: rtl;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +28,7 @@
 }
 
 #contact-info h2 {
-    color: #FFFFFF;
+    color: #FFF;
     font-size: clamp(1.5rem, 4vw, 2.1rem);
     line-height: 1.5;
     margin: 0 0 12px;
@@ -50,7 +48,6 @@
     padding: 0;
     margin: 0 0 40px;
     list-style: none;
-
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 14px;
@@ -63,28 +60,20 @@
 #contact-info .footer-links a {
     box-sizing: border-box;
     min-height: 76px;
-    height: 100%;
     padding: 14px 16px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 6px;
-
     background: #303B33;
     border: 1px solid rgba(229, 235, 229, 0.13);
     border-radius: 12px;
-
     color: #E5EBE5;
     font-size: 0.95rem;
     font-weight: 600;
     text-decoration: none;
-
-    transition:
-        background-color 0.2s ease,
-        border-color 0.2s ease,
-        transform 0.2s ease;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
 }
 
 .footer-label {
@@ -96,7 +85,7 @@
 #contact-info .footer-links a:hover {
     background: #3B4D40;
     border-color: #9AB9A0;
-    color: #FFFFFF;
+    color: #FFF;
     transform: translateY(-2px);
 }
 
@@ -114,11 +103,9 @@
     border-top: 1px solid rgba(229, 235, 229, 0.15);
     padding-top: 20px;
     margin: 0;
-
     color: #BFCBC0;
     font-size: 0.82rem;
     line-height: 1.8;
-    text-align: center;
 }
 
 /* Mobile */
@@ -133,7 +120,8 @@
     }
 
     .footer-links {
-        grid-template-columns: minmax(0, 1fr);
+        display: flex;
+        flex-direction: column;
         gap: 10px;
         margin-bottom: 32px;
     }
@@ -144,7 +132,7 @@
     }
 }
 
-/* Respect reduced-motion preferences */
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
     #contact-info .footer-links a {
         transition: none;
@@ -154,25 +142,3 @@
         transform: none;
     }
 }
-
-
-@media screen and (max-width: 600px) {
-    footer.site-footer #contact-info ul.footer-links {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: stretch !important;
-        width: 100%;
-    }
-
-    footer.site-footer #contact-info ul.footer-links > li {
-        display: block;
-        width: 100%;
-        min-width: 0;
-    }
-
-    footer.site-footer #contact-info ul.footer-links > li > a {
-        width: 100%;
-        box-sizing: border-box;
-    }
-}
-
