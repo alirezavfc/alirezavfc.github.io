@@ -154,3 +154,25 @@
         transform: none;
     }
 }
+
+
+@media screen and (max-width: 600px) {
+    footer.site-footer #contact-info ul.footer-links {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100%;
+    }
+
+    footer.site-footer #contact-info ul.footer-links > li {
+        display: block;
+        width: 100%;
+        min-width: 0;
+    }
+
+    footer.site-footer #contact-info ul.footer-links > li > a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
